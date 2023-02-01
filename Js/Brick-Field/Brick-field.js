@@ -29,12 +29,12 @@ let continue_play = false;
 let getHighestScore = localStorage.getItem("hightestScore");
 let highest_score = document.getElementById("highest_score_number");
 highest_score.innerHTML = getHighestScore || 0;
-const Background_sound = new Audio("../../sounds/Game_Theme_Song.mp3");
-const GameOver_sound = new Audio("../../sounds/Game_gameover.mp3");
-const Game_Lose_Live = new Audio("../../sounds/Game_Lose_Live.mp3");
-const Break_sound = new Audio("../../sounds/Break_brick_sound.mp3");
-const Start_Game = new Audio("../../sounds/Start_Game.mp3");
-const Warning_Live = new Audio("../../sounds/Lives_warning.mp3");
+const Background_sound = new Audio("./../../sounds/Game_Theme_Song.mp3");
+const GameOver_sound = new Audio("./../../sounds/Game_gameover.mp3");
+const Game_Lose_Live = new Audio("./../../sounds/Game_Lose_Live.mp3");
+const Break_sound = new Audio("./../../sounds/Break_brick_sound.mp3");
+const Start_Game = new Audio("./../../sounds/Start_Game.mp3");
+const Warning_Live = new Audio("./../../sounds/Lives_warning.mp3");
 
 
 class Ball {
