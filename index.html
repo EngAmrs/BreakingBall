@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/Style.css">
+    <link href="https://fonts.cdnfonts.com/css/games" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/weghorst" rel="stylesheet">
+    <script src="Js/Brick-blocks.js" defer type="module"></script>
+    <script src="Js/Brick-Field/Brick-field.js" defer type="module"></script>
+    <script src="Js/paddleScript.js" defer type="module"></script>
+    <script src="Js/loading.js" defer></script>
+    <link rel="shortcut icon" type="image/x-icon"  href="./Images/Mario.jpeg">
+    <title>BreakOUT Ball</title>
+ 
+</head>
+<body>
+    <div id="loading">
+        <h1>Super Mario Break-out Game</h1>
+        <img src="Images/ezgif-1-478717032d.gif"  alt="">
+    </div>
+    <div id="dash-board">
+        <div id="score-section">
+            <img src="Images/output-onlinegiftools.gif" width="25" alt="">
+            <label for="score"> Score</label>
+            <p id="score-value"> 0</p>
+        </div>
+        <div id="lives">
+            <img src="Images/output2-onlinegiftools.gif" width="25" alt="">
+            <label for="lives"> Lives</label>
+            <p id="lives-remaining">3</p>
+        </div>
+        <div id="highest_score">
+            <img src="Images/highest_score.png" width="25" he alt="">
+            <label for="highest_score"> Highest score : </label>
+            <p id="highest_score_number">3</p>
+        </div>
+        <div id="levels-section">
+            <label for="level">Difficulty</label>
+            <select name="level" id="Levels">
+                <option value="easy">Easy</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+
+        <div id="levels-selected">
+            <p>Difficulty: <span id="level">Easy</span> </p>
+        </div>
+
+        <button id="start-play">START</button>
+        <button id="pause-play">Pause</button>
+        <button id="stop-play">QUIT GAME</button>
+    </div>
+    <div id="Game-over">
+        <p> Game over</p>
+        <button id="play-again">Play Again</button>
+    </div>
+    <canvas id="cvs" height="850" width="2000"></canvas>
+
+</body>
+
+</html>
